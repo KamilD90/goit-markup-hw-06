@@ -411,33 +411,46 @@
         <button class="close-btn" data-modal-close>&times;</button>
         <form name="contact-form" class="form" autocomplete="on">
           <h2 class="form-name">Zostaw swoje dane w formularzu poniżej</h2>
-          <label class="form-label"
-            >Imie
-            <div class="input-container">
-              <input type="name" name="name" class="field" required />
-              <svg width="18px" height="18px" class="input-icon">
-                <use href="images/icons.svg#icon-person-black-18dp-1"></use>
-              </svg>
-            </div>
-          </label>
-          <label class="form-label"
-            >Telefon
-            <div class="input-container">
-              <input type="tel" name="phone-number" class="field" required />
-              <svg width="18px" height="18px" class="input-icon">
-                <use href="images/icons.svg#icon-phone-black-18dp-1"></use>
-              </svg>
-            </div>
-          </label>
-          <label class="form-label"
-            >Email
-            <div class="input-container">
-              <input type="email" name="email" class="field" required />
-              <svg width="18px" height="18px" class="input-icon">
-                <use href="images/icons.svg#icon-email-black-18dp-1"></use>
-              </svg>
-            </div>
-          </label>
+          <label class="form-label" for="customer-name">Imie</label>
+
+          <div class="input-container">
+            <input
+              type="text"
+              name="name"
+              class="field"
+              id="customer-name"
+              required
+            />
+            <svg width="18px" height="18px" class="input-icon">
+              <use href="images/icons.svg#icon-person-black-18dp-1"></use>
+            </svg>
+          </div>
+          <label class="form-label" for="customer-phone">Telefon</label>
+          <div class="input-container">
+            <input
+              type="number"
+              name="phone-number"
+              class="field"
+              id="customer-phone"
+              required
+            />
+            <svg width="18px" height="18px" class="input-icon">
+              <use href="images/icons.svg#icon-phone-black-18dp-1"></use>
+            </svg>
+          </div>
+          <label class="form-label" for="customer-email">Email</label>
+          <div class="input-container">
+            <input
+              type="email"
+              name="email"
+              class="field"
+              id="customer-email"
+              required
+            />
+            <svg width="18px" height="18px" class="input-icon">
+              <use href="images/icons.svg#icon-email-black-18dp-1"></use>
+            </svg>
+          </div>
           <label class="form-label"
             >Komentarz <textarea placeholder="Wprowadź tekst"></textarea>
           </label>
